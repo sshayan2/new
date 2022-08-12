@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shadi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./shadi.js" defer></script>
+    <title>shadi</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="#home">Shadi</a>
+            <section>
+                <a href="#home">Home</a>
+                <a href="#ed">Education</a>
+                <a href="#about">About me</a>
+                <a href="#contact">Contact Me</a>
+            </section>
+        </div>
+    </nav>
+    <main>
+        <!-- home -->
+        <div class="home-bg" id="home">
+            <div class="home">
+                <img src="./doc/shadi_pic.jpg" alt="">
+                <section class="intro">
+                    <h3>hi, this is shadi</h3>
+                    <h5>Front-end Developer</h5>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus incidunt nulla inventore minus tenetur!</h6>
+                    <section>
+                        <form action="./doc/Shadi Shayan Resume.docx" method="get">
+                            <button>resume</button>
+                        </form>
+                        <a href="#contact">contact me</a>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <!-- about me -->
+        <div class="about-bg" id="about">
+            <div class="about">
+                <section>
+                    <h3>About me</h3>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi distinctio voluptatibus dolores quis atque excepturi est vero facilis aliquam eligendi, earum tempora laudantium repellendus ducimus nisi vel nam recusandae?</h5>
+                    <h6>Date : 10th,Aug 2022</h6>
+                </section>
+                <section>
+                    <h3>Basic Information</h3>
+                    <h5>Age : <span>29</span></h5>
+                    <h5>Email : <span>shadi.shayan71@gmail.com/span></h5>
+                    <h5>Language : <span> Persian, English</span></h5>
+                    <h5>Class Section : <span>NFF</span></h5>
+                    <h5>Student Id : <span>135824217</span></h5>
+                    <h5>Instructor : <span>Muath Alzghool</span></h5>
+                </section>
+            </div>
+        </div>
+        <!-- ed -->
+        <div class="ed-bg" id="ed">
+            <div class="ed">
+                <h2>Education</h2>
+                <div class="ed-content">
+                    <div class="ed-row">
+                        <section>
+                            <h3>Bachelor’s degree</h3>
+                            <h4>Computer Science</h4>
+                            <h5>Esfahan university</h5>
+                            <h6>2010-2014</h6>
+                        </section>
+                        <section class="ed-empty"></section>
+                    </div>
+                    <div class="ed-row">
+                        <section class="ed-empty"></section>
+                        <section>
+                            <h3>Diploma</h3>
+                            <h4>Computer Programming</h4>
+                            <h5>Seneca College</h5>
+                            <h6>2022-present</h6>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact me -->
+        <div class="contact-bg" id="contact">
+            <form action="" method="post" class="form">
+                <h2>Contact Me</h2>
+                    <section class="contact-input">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </section>
+                    <section class="contact-input">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </section>
+                  <section class="contact-input">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" required list="cities">
+                        <datalist id="cities">
+                            <option value="Toronto">
+                            <option value="Vancouver">
+                            <option value="Montreal">
+                            <option value="Niagara Falls">
+                            <option value="Victoria">
+                        </datalist>
+                    </section>
+                    <section class="contact-input">
+                        <label for="post">Post-Code:</label>
+                        <input type="text" id="post" required>
+                    </section>
+                    <section class="radio">
+                        <section>
+                            <input type="radio" name="purpose" id="hire" required>
+                            <label for="hire">Hire</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="purpose" id="comment" required>
+                            <label for="comment">Comment</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="purpose" id="question" required>
+                            <label for="question">Question</label>
+                        </section>
+                    </section>
+                    <section class="contact-input">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age">
+                    </section>
+                    <section class="contact-input hour-container">
+                        <label for="hour">Hour Rate:</label>
+                        <input type="text" id="hour">
+                    </section>
+                <div class="message">
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" required></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
